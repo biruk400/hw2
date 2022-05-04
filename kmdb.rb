@@ -93,7 +93,6 @@ new_studio = Studio.new
 new_studio["studio_name"] = "Warner Bros."
 new_studio.save 
 warner = Studio.find_by({"studio_name" => "Warner Bros." })
-puts warner["id"]
 
 # Movies
 new_movie = Movie.new
@@ -179,19 +178,17 @@ batman_begins = Movie.find_by({"movie_name" => "Batman Begins" })
 dk = Movie.find_by({"movie_name" => "The Dark Knight" })
 dk_rises = Movie.find_by({"movie_name" => "The Dark Knight Rises" })
 
-puts dk_rises.inspect
-
 new_role = Role.new
 new_role["character_name"] = "Bruce Wayne"
 new_role["actor_id"] = christian["id"]
 new_role["movie_id"] = batman_begins["id"]
 new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Alfred"
-# new_role["actor_id"] = michael["id"]
-# new_role["movie_id"] = batman_begins["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Alfred"
+new_role["actor_id"] = michael["id"]
+new_role["movie_id"] = batman_begins["id"]
+new_role.save
 
 new_role = Role.new
 new_role["character_name"] = "Ra's Al Ghul"
@@ -199,85 +196,90 @@ new_role["actor_id"] = liam["id"]
 new_role["movie_id"] = batman_begins["id"]
 new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Rachel Dawes"
-# new_role["actor_id"] = katie["id"]
-# new_role["movie_id"] = batman_begins["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Rachel Dawes"
+new_role["actor_id"] = katie["id"]
+new_role["movie_id"] = batman_begins["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Commissioner Gordon"
-# new_role["actor_id"] = gary["id"]
-# new_role["movie_id"] = batman_begins["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Commissioner Gordon"
+new_role["actor_id"] = gary["id"]
+new_role["movie_id"] = batman_begins["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Bruce Wayne"
-# new_role["actor_id"] = christian["id"]
-# new_role["movie_id"] = dk["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Bruce Wayne"
+new_role["actor_id"] = christian["id"]
+new_role["movie_id"] = dk["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Joker"
-# new_role["actor_id"] = heath["id"]
-# new_role["movie_id"] = dk["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Joker"
+new_role["actor_id"] = heath["id"]
+new_role["movie_id"] = dk["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Harvey Dent"
-# new_role["actor_id"] = aaron["id"]
-# new_role["movie_id"] = dk["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Harvey Dent"
+new_role["actor_id"] = aaron["id"]
+new_role["movie_id"] = dk["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Alfred"
-# new_role["actor_id"] = micahel["id"]
-# new_role["movie_id"] = dk["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Alfred"
+new_role["actor_id"] = michael["id"]
+new_role["movie_id"] = dk["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Rachel Dawes"
-# new_role["actor_id"] = maggie["id"]
-# new_role["movie_id"] = dk["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Rachel Dawes"
+new_role["actor_id"] = maggie["id"]
+new_role["movie_id"] = dk["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Bruce Wayne"
-# new_role["actor_id"] = christian["id"]
-# new_role["movie_id"] = dk_rises["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Bruce Wayne"
+new_role["actor_id"] = christian["id"]
+new_role["movie_id"] = dk_rises["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Commissioner Gordon"
-# new_role["actor_id"] = gary["id"]
-# new_role["movie_id"] = dk_rises["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Commissioner Gordon"
+new_role["actor_id"] = gary["id"]
+new_role["movie_id"] = dk_rises["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Bane"
-# new_role["actor_id"] = tom["id"]
-# new_role["movie_id"] = dk_rises["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "Bane"
+new_role["actor_id"] = tom["id"]
+new_role["movie_id"] = dk_rises["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "John Blake"
-# new_role["actor_id"] = joseph["id"]
-# new_role["movie_id"] = dk_rises["id"]
-# new_role.save
+new_role = Role.new
+new_role["character_name"] = "John Blake"
+new_role["actor_id"] = joseph["id"]
+new_role["movie_id"] = dk_rises["id"]
+new_role.save
 
-# new_role = Role.new
-# new_role["character_name"] = "Selina Kyle"
-# new_role["actor_id"] = anne["id"]
-# new_role["movie_id"] = dk_rises["id"]
-# new_role.save
-
-puts Role.all.inspect
+new_role = Role.new
+new_role["character_name"] = "Selina Kyle"
+new_role["actor_id"] = anne["id"]
+new_role["movie_id"] = dk_rises["id"]
+new_role.save
 
 
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
 puts ""
+
+for movie in Movie.all
+  movie_name = movie["movie_name"]
+  year_released = movie["year_released"]
+  studio = Studio.find_by({"id" => movie["studio_id"]})
+  puts "#{movie_name}       #{year_released}        #{studio["studio_name"]}"
+end
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
@@ -290,3 +292,11 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+for role in Role.all
+  movie = Movie.find_by({"id" => role["movie_id"]})
+  actor = Actor.find_by({"id" => role["actor_id"]})
+  character = role["character_name"]
+  studio = Studio.find_by({"id" => movie["studio_id"]})
+  puts "#{movie["movie_name"]}       #{actor["actor_name"]}      #{character}"
+end
